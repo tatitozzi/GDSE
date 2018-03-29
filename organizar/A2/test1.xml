@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<produtos>
+  <produto id="1">
+    <descricao>Espada</descricao>
+    <preco>39.6</preco>
+    <endereco>2</endereco>
+  </produto>
+  <produto id="2">
+    <descricao>Falconete</descricao>
+    <preco>12.6</preco>
+    <endereco>4</endereco>
+  </produto>
+  <produto id="3">
+    <descricao>Tanqee</descricao>
+    <preco>5000.03</preco>
+    <endereco>5</endereco>
+  </produto>
+  <produto id="4">
+    <descricao>Katana</descricao>
+    <preco>12.56</preco>
+    <endereco>8</endereco>
+  </produto>
+  <produto id="5">
+    <descricao>Alabarda</descricao>
+    <preco>200.3</preco>
+    <endereco>10</endereco>
+  </produto>
+  <produto id="6">
+    <descricao>Cot&#xF3;</descricao>
+    <preco>156.98</preco>
+    <endereco>2</endereco>
+  </produto>
+  <produto id="7">
+    <descricao>Manguai</descricao>
+    <preco>58.9</preco>
+    <endereco>4</endereco>
+  </produto>
+  <produto id="8">
+    <descricao>Hauberk</descricao>
+    <preco>88.65</preco>
+    <endereco>2</endereco>
+  </produto>
+  <produto id="9">
+    <descricao>Estrela da Manh&#xE3;</descricao>
+    <preco>66.58</preco>
+    <endereco>10</endereco>
+  </produto>
+  <produto id="20">
+    <descricao>Foice</descricao>
+    <preco>250.3</preco>
+    <endereco>10</endereco>
+  </produto>
+</produtos>

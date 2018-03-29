@@ -1,0 +1,1 @@
+REQUISITADO! Este é o texto contido no arquivo mensagem.txt que você acaba de requisitar VIA AJAX.

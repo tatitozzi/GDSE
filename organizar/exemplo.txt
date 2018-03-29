@@ -1,0 +1,23 @@
+<?php
+mysql_connect('localhost', 'root', 'sua_senha') or die ('Erro ao conectar');
+mysql_select_db('newsletter') or die ('Erro ao conectar com o banco de dados');
+$rs = mysql_query("SELECT idcontato, nome, email FROM contato ORDER BY idcontato");
+ 
+$xml = "<?xml version='1.0' encoding='UTF-8'?>n";//cabeçalho do arquivo
+       $xml .= "<Newsletter> n";
+ 
+       while($reg = mysql_fetch_object($rs)){
+           $xml .= "t<Contato>n";
+           $xml .= "tt<idcontato>$reg->idcontato</idcontato>n";
+           $xml .= "tt<nome>$reg->nome</nome>n";
+           $xml .= "tt<email>$reg->email</email> n";
+           $xml .= "t</Contato>n";
+       }
+       $xml .= "</Newsletter>";
+ 
+       $ponteiro = fopen('backup.xml', 'w'); //cria um arquivo com o nome backup.xml
+       fwrite($ponteiro, $xml); // salva conteúdo da variável $xml dentro do arquivo backup.xml
+ 
+       $ponteiro = fclose($ponteiro); //fecha o arquivo
+ 
+?>

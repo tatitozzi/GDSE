@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://www.trow.net.br/nogueira/utfpr/ex_04.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Ler uma Mensagem com AJAX</title>
+
+<meta http-equiv="content-language" content="pt-br">
+<link href="./index_files/estilos.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function iniciaAjax() {
+	var objetoAjax = false;
+		if (window.XMLHttpRequest) {
+			objetoAjax = new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		try {		
+		objetoAjax = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch(e) {
+			try {
+			objetoAjax = new ActiveXObject("Microsoft.XMLHTTP");			
+		} catch(ex) {	
+		objetoAjax = false;
+       }
+		}
+	}
+	return objetoAjax;
+}
+		
+function requisitar (arquivo) {
+			var requisicaoAjax = iniciaAjax(); 
+				if(requisicaoAjax) {
+					requisicaoAjax.onreadystatechange = function () {	
+					mostraResposta(requisicaoAjax);	
+					};
+		requisicaoAjax.open("GET", arquivo, true);
+		requisicaoAjax.send(null);
+				}
+}					
+
+function mostraResposta(requisicaoAjax) {
+	if(requisicaoAjax.readyState == 4) {
+	if(requisicaoAjax.status == 200 || requisicaoAjax.status == 304) {
+	alert(requisicaoAjax.responseText);
+	} else {
+	alert("Problema na comunicação com o servidor");
+	}
+	}	
+}
+
+</script>
+<body>
+<div id="tudo">
+<div id="conteudo">
+<h1>Exemplo de requisi��o TXT</h1>
+<a href="mensagem.txt" onclick="requisitar(this.href); return false;">Requisitar o arquivo <strong>mensagem.txt</strong></a>
+
+</div>
+</div>
+
+
+
+</body></html>

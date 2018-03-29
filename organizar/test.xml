@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<produtos>
+  <produto id="8">
+    <descricao>Hauberk</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="6">
+    <descricao>Cot&#xF3;</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="2">
+    <descricao>Falconete</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="4">
+    <descricao>Katana</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="1">
+    <descricao>Espada</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="5">
+    <descricao>Alabarda</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="3">
+    <descricao>Tanqee</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+  <produto id="9">
+    <descricao>Estrela da Manh&#xE3;</descricao>
+    <quantidade>3</quantidade>
+  </produto>
+  <produto id="7">
+    <descricao>Manguai</descricao>
+    <quantidade>4</quantidade>
+  </produto>
+</produtos>

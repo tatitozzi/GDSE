@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<vendas>
+  <titulo>Arquivo de Venda</titulo>
+  <data_atualizacao>22/08/2015</data_atualizacao>
+  <venda>
+    <cod_venda>001</cod_venda> 
+    <cliente>João</cliente> 
+    <email>joao@email.com</email> 
+    <itens>
+    	<item>
+	    	<cod_produto>909</cod_produto>
+	    	<qtde>12</qtde>
+	    	<descricao>Produto 1</descricao>
+	    </item>
+	    <item>
+	    	<cod_produto>910</cod_produto>
+	    	<qtde>34</qtde>
+	    	<descricao>Produto 2</descricao>
+	    </item>
+    </itens>
+  </venda>
+  <venda>
+    <cod_venda>002</cod_venda> 
+    <cliente>Pedro</cliente> 
+    <email>pedro@email.com</email> 
+    <itens>
+    	<item>
+	    	<cod_produto>300</cod_produto>
+	    	<qtde>15</qtde>
+	    	<descricao>Produto 3</descricao>
+	    </item>
+	    <item>
+	    	<cod_produto>304</cod_produto>
+	    	<qtde>19</qtde>
+	    	<descricao>Produto 4</descricao>
+	    </item>
+    </itens>
+  </venda>
+</vendas>
