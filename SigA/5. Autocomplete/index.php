@@ -33,8 +33,6 @@ function showResult(str){
 <input type="text" size="50" onKeyUp="showResult(this.value)">
 <div id="livesearch"></div>
 </form>
-<div>
-	
-</div>
+
 </body>
 </html>
