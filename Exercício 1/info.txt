@@ -1,0 +1,10 @@
+XML -> AJAX
+
+Auto completar
+
+	JS + XML
+	
+	
+	• Converter o banco em XML [OK]
+	• Criar um pagina com busca dos produtos, quando clicado em +, listar o nome buscado
+Do lado do item lista inserir botão - para limpar a tela

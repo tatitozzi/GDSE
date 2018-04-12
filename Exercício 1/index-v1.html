@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<!--
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+-->
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<body>
+
+  <div class="bd-more-loves">
+      
+<button type="button" class="button is-medium is-danger bd-rainbow has-text-centered" onclick="loadDoc()">
+  Listar produtos</button>
+<br><br>
+</div>
+<div class="container">
+<table id="demo" class="table bd-more-loves"></table>
+
+<div class="field has-addons">
+    <div class="control">
+      <input class="input" type="text" id="input" name="descricao" placeholder="Digite o produto">
+    </div>
+    <div class="control">
+      <a class="button is-info" onclick="searchXML()" type="submit" value="submit">
+        +
+      </a>
+    
+    </div>
+
+  </div>
+    <div id="results">
+    </div>
+</div>
+
+
+
+<script language="JavaScript" type="text/javascript">
+  function loadXMLDoc(dname)
+  {
+      if (window.XMLHttpRequest)
+      {
+          xhttp=new XMLHttpRequest();
+      }
+      else
+      {
+          xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xhttp.open("GET",dname,false);
+      xhttp.send();
+      return xhttp.responseXML;
+  } 
+  function searchXML()
+  {
+      xmlDoc=loadXMLDoc("produtos.xml");
+      x=xmlDoc.getElementsByTagName("descricao");
+      input = document.getElementById("input").value;
+      size = input.length;
+      if (input == null || input == "")
+      {
+          document.getElementById("results").innerHTML= "Please enter a character or name!";
+          return false;
+      }
+      for (i=0;i<x.length;i++)
+      {
+          startString = descricao.substring(0,size);
+          if (startString.toLowerCase() == input.toLowerCase())
+          {
+            descricao = xmlDoc.getElementsByTagName("descricao")[i].childNodes[0].nodeValue;
+            startString = descricao.substring(0,size);
+             // descricao=xmlDoc.getElementsByTagName("descricao")[i].childNodes[0].nodeValue;
+              quantidade=xmlDoc.getElementsByTagName("quantidade")[i].childNodes[0].nodeValue;
+              divText = "<h1>The contact details are:</h1><br /><table border=1><tr><th>First Name</th><th>Last Name</th><th>Phone</th><th>Street</th><th>City</th><th>State</th><th>Postcode</th></tr>" + "<tr><td>" + firstname + "</td><td>" + lastname + "</td><td>" + phone + "</td><td>" + street + "</td><td>" + city + "</td><td>" + state + "</td><td>" + postcode + "</td></tr>" + "</table>";
+              break;
+          }
+          else
+          {
+              divText = "<h2>The contact does not exist.</h2>";
+          }
+      }
+      document.getElementById("results").innerHTML= divText;
+  }
+  </script>
+
+</body>
+</html>

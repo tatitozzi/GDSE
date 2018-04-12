@@ -45,14 +45,4 @@
     <descricao>Estrela da Manhã</descricao>
     <preco>66.58</preco>
   </produto>
-  <produto>
-    <id_produto>20</id_produto>
-    <descricao>Foice</descricao>
-    <preco>250.3</preco>
-  </produto>
-  <produto>
-    <id_produto>10</id_produto>
-    <descricao>Bastão</descricao>
-    <preco>460.65</preco>
-  </produto>
 </produtos>

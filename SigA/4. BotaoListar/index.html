@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+-->
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<body>
+
+  <div class="bd-more-loves">
+
+<button type="button" class="button is-medium is-danger bd-rainbow has-text-centered" onclick="loadDoc()">
+  Listar produtos</button>
+<br><br>
+</div>
+<div class="container">
+<table id="demo" class="table bd-more-loves"></table>
+</div>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "produtos.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Produto</th><th>Quantidade</th></tr>";
+  var x = xmlDoc.getElementsByTagName("produto");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("descricao")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("preco")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>

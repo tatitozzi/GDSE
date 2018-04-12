@@ -1,0 +1,12 @@
+Exercício 3
+Descrição:
+Esta Lista foi Conduzida nas últimas 3 aulas, por isso terá peso dobrado no computo da nota.
+
+ 
+
+A partir do Banco de Dados do Exercício 1:
+
+Gere um XML com produto e estoque
+Crie um código PHP para consumir e exibir os dados do XML
+Baseado no XML Gerado exiba os dados em um documento HTML via AJAX
+Crie uma página com os links para todos os exemplos realizados
