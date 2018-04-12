@@ -24,6 +24,7 @@ function showResult(str){
 	xmlhttp.open("GET", "livesearch.php?q="+str,true);
 	xmlhttp.send();
 }
+
 </script>
 </head>
 <body>
