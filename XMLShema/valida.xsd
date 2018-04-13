@@ -14,13 +14,13 @@
                     <!-- Os componentes de "produto" devem aparecer nessa ordem -->
                     <xs:sequence>
                         <!-- Define o ID -->
-                        <xs:element name="id">
+                        <xs:element name="id_produto">
                             <!-- Define como tipo simples por não ser formado por outros elementos -->
                             <xs:simpleType>
-                                <!-- Define o tipo "string" para ID e informa que existem restrições -->
-                                <xs:restriction base="xs:string">
+                                <!-- Define o tipo "integer" para ID e informa que existem restrições -->
+                                <xs:restriction base="xs:integer">
                                     <!-- Determina como 10 o tamanho máximo -->
-                                    <xs:length value="10"/>
+                                    <xs:length value="20"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
