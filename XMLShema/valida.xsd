@@ -27,7 +27,7 @@
                         <!-- Define que o elemento "descricao" é obrigatório mas pode aparecer N vezes -->
                         <xs:element name="descricao" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
                         <!-- O valor-padrão para minOccurs e maxOccurs é 1 quando não forem definidos -->
-                        <xs:element name="quantidade" type="xs:decimal"/>
+                        <xs:element name="quantidade" type="xs:integer"/>
 
                     </xs:sequence>
                 </xs:complexType>
