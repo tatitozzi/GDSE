@@ -1,0 +1,10 @@
+Exercício 4:
+Implementar a validação via DTD ou XMl Schema no exemplo do Exercício 3
+
+Inicia em 13/04/2018 às 0h 0 e finaliza em 19/04/2018 às 12h 0
+
+
+-----------
+
+
+Link do git: https://github.com/tatitozzi/GDSE/tree/master/XMLShema
