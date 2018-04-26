@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selecione o XML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet prefetch' href='https://unpkg.com/buefy/lib/buefy.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'>
+    <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.6/css/all.css'>
+    <style class="cp-pen-styles"></style>
+</head>
+<body>
+
+<div id="app" class="container">
+<div class="default-container">
+    <br>
+    <h1 class="title is-spaced">XML -> XPath</h1> 
+    <h2 class="subtitle">Selecione o XML</h2> 
+    <hr>     
+
+<form action="upload.php" enctype="multipart/form-data" method="POST">
+    <input type="hidden"  name="MAX_FILE_SIZE" value="3000">
+    <b-field class="file">
+        <b-upload v-model="files" name="userfile" type="file">
+            <a class="button is-primary" value="Enviar arquivo">
+        <b-icon icon="upload"></b-icon>
+        <span>Selecionar arquivo</span>
+            </a>
+        </b-upload>
+
+        <span class="file-name"
+            v-if="files && files.length">
+            {{ files[0].name }}
+        </span>
+            <input class="button is-link is-inverted" type="submit" value="Enviar"/>                
+    </b-field>
+</form>
+<br>
+
+   </div>
+</div>
+        
+<script src='https://unpkg.com/vue/dist/vue.min.js'></script>
+<script src='https://unpkg.com/buefy'></script>
+<script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js'></script>
+<script src='https://unpkg.com/cleave.js/dist/cleave.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/sortablejs@1.6.1/Sortable.min.js'></script>
+<script >Vue.use(Buefy.default);
+
+var example = {
+    data: function data() {
+        return {
+            files: []
+        };
+    }
+};
+
+var app = new Vue(example);
+
+app.$mount('#app');
+</script>
+</body>
+
+</html>
