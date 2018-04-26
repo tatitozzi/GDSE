@@ -13,7 +13,7 @@ if(!isset($_SESSION['file']) == true){
     $resultado = $xpath->query($query);
 
     if($resultado == FALSE){
-      echo ("Erro query invalida!");
+      echo ("Erro query inválida!");
     }else{
       foreach ($resultado as $value) {
            echo $value->nodeValue . "<br>";
