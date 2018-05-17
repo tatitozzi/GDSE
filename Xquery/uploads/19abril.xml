@@ -1,0 +1,13 @@
+<?xml version ='1.0'?>
+<empregados>
+	<empregado cod = "E01" dept = "D01">
+		<nome>João</nome>
+		<inicial-meio>S.</inicial-meio>
+		<sobrenome>Santos</sobrenome>
+	</empregado>
+	
+	<empregado cod= "E02" dept = "D01">
+		<nome>Ana</nome>
+		<sobrenome>Ferraz</sobrenome>
+	</empregado>
+</empregados>
