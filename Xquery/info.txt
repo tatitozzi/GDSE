@@ -1,8 +1,8 @@
-Lista 5
+Lista 6
 Descri��o:
-Agora voc� j� sabe tudo sobre o funcionamento do XPATH o objetivo desta tarefa � 
+Agora voc� j� sabe tudo sobre o funcionamento do XQUERY o objetivo desta tarefa � 
 criar uma p�gina Web que permita com que seja feito UPLOAD de um arquivo XML e que 
-exista uma tela de execu��o de comandos XPATH. 
+exista uma tela de execu��o de comandos XQUERY. 
 
  
 
@@ -14,6 +14,3 @@ http://php.net/manual/pt_BR/simplexmlelement.xpath.php
 
 https://secure.php.net/manual/pt_BR/features.file-upload.post-method.php
 
-
-Per�odo:
-Inicia em 20/04/2018 �s 07h30 e finaliza em 20/04/2018 �s 09h30
