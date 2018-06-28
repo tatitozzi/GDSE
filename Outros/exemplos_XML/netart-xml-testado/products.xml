@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<my_products>
+  <product>
+    <id>1</id>
+    <name>Espada</name>
+    <price>39.6</price>
+  </product>
+  <product>
+    <id>2</id>
+    <name>Falconete</name>
+    <price>12.6</price>
+  </product>
+  <product>
+    <id>3</id>
+    <name>Tanqee</name>
+    <price>5000.03</price>
+  </product>
+  <product>
+    <id>4</id>
+    <name>Katana</name>
+    <price>12.56</price>
+  </product>
+  <product>
+    <id>5</id>
+    <name>Alabarda</name>
+    <price>200.3</price>
+  </product>
+  <product>
+    <id>6</id>
+    <name>Cotó</name>
+    <price>156.98</price>
+  </product>
+  <product>
+    <id>7</id>
+    <name>Manguai</name>
+    <price>58.9</price>
+  </product>
+  <product>
+    <id>8</id>
+    <name>Hauberk</name>
+    <price>88.65</price>
+  </product>
+  <product>
+    <id>9</id>
+    <name>Estrela da Manhã</name>
+    <price>66.58</price>
+  </product>
+</my_products>

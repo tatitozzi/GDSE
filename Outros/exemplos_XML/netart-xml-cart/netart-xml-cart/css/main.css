@@ -1,0 +1,55 @@
+/* NetArt XML Cart - www.netartmedia.net/xml-cart
+ * Copyright 2013-2017 NetArt Media
+ * http://www.netartmedia.net
+ *
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0 */ 
+ 
+#payment-container
+{
+	display: none;
+}
+
+.no-top-margin
+{
+	margin-top:0px !important;
+}
+
+.add-right-margin
+{
+	margin-right: 10px;
+}
+
+#popup 
+{
+	text-align:center !important;
+    width:400px;
+    height:50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-15px 0 0 -200px;
+    display:none;
+	font-weight:800;
+	position:fixed;
+	border:1px solid #cccccc;
+	
+}
+
+.no-visibility
+{
+	visibility:hidden;
+}
+
+.quantity-text
+{
+	border-radius: 3px;
+	width:20px;
+	margin-right:5px;
+	border-width:1px;
+}
+
+.underline-link
+{
+	text-decoration:underline;
+}

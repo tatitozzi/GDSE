@@ -1,0 +1,20 @@
+<my_products>
+	<product>
+		<id>1</id>
+		<name>Some test product</name>
+		<price>49.00</price>
+		<description>
+			Here comes the description of the test product ...
+		</description>
+		<details_link>www.google.com</details_link>
+	</product>
+	<product>
+		<id>2</id>
+		<name>Another test product</name>
+		<price>69.00</price>
+		<description>
+			This is the description of the second test product ...
+		</description>
+		<details_link>www.yahoo.com</details_link>
+	</product>
+</my_products>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<produtos>
+  <produto>
+    <id_produto>1</id_produto>
+    <descricao>Espada</descricao>
+    <quantidade>39.6</quantidade>
+  </produto>
+  <produto>
+    <id_produto>2</id_produto>
+    <descricao>Falconete</descricao>
+    <quantidade>12.6</quantidade>
+  </produto>
+  <produto>
+    <id_produto>3</id_produto>
+    <descricao>Tanqee</descricao>
+    <quantidade>5000.03</quantidade>
+  </produto>
+  <produto>
+    <id_produto>4</id_produto>
+    <descricao>Katana</descricao>
+    <quantidade>12.56</quantidade>
+  </produto>
+  <produto>
+    <id_produto>5</id_produto>
+    <descricao>Alabarda</descricao>
+    <quantidade>200.3</quantidade>
+  </produto>
+  <produto>
+    <id_produto>6</id_produto>
+    <descricao>Cotó</descricao>
+    <quantidade>156.98</quantidade>
+  </produto>
+  <produto>
+    <id_produto>7</id_produto>
+    <descricao>Manguai</descricao>
+    <quantidade>58.9</quantidade>
+  </produto>
+  <produto>
+    <id_produto>8</id_produto>
+    <descricao>Hauberk</descricao>
+    <quantidade>88.65</quantidade>
+  </produto>
+  <produto>
+    <id_produto>9</id_produto>
+    <descricao>Estrela da Manhã</descricao>
+    <quantidade>66.58</quantidade>
+  </produto>
+</produtos>

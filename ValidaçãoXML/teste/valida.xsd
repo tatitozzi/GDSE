@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="produtos">
+ <xs:complexType>
+  <xs:sequence>
+   <xs:element name="produto">
+    <xs:complexType>
+     <xs:sequence>
+     <xs:element name="id_produto" type="xs:integer"/>
+     <xs:element name="descricao" type="xs:string"/>
+     <xs:element name="quantidade" type="xs:integer"/>
+     </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+  </xs:sequence>
+ </xs:complexType>
+</xs:element>
+</xs:schema>

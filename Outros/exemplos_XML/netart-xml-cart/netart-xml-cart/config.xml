@@ -1,0 +1,8 @@
+<my_config>
+	<configuration>
+		<notification_email>your_email@mail.com</notification_email>
+		<currency_symbol>$</currency_symbol>
+		<currency_code>USD</currency_code>
+		<paypal_account>test@paypal.com</paypal_account>
+	</configuration>
+</my_config>

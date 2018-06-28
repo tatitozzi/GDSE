@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<input type="text" id="search"  autocomplete="off" />
+<p id="output"></p>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#search').on('keyup', function(){
+        $.ajax({
+            type: "GET",
+            url: "produtos.xml",
+            dataType: "xml",
+            success: parseXML
+        });
+    });
+});
+function parseXML(xml){
+    var searchFor = $('#search').val();
+    var reg = new RegExp(searchFor, "i");
+    $(xml).find('entry').each(function(){
+        var descricao = $(this).find('descricao').text();
+        var titleSearch = descricao.search(reg);
+        var quantidade = $(this).find('quantidade').text();
+        var quantidadeSearch = quantidade.search(reg);
+        $('#output').empty();
+        if(descricaoSearch > -1){
+            $('#output').append('Found <i>'+searchFor+'<\/i> in title: '+descricao.replace(reg, '<b>'+searchFor+'</b>')+'<br \/>');
+        }
+        if(quantidadeSearch > -1){
+            $('#output').append('Found <i>'+searchFor+'<\/i> in description: '+quantidade.replace(reg, '<b>'+searchFor+'</b>')+'<br \/>');
+        }
+    });    
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(https://fonts.googleapis.com/css?family=Wire+One|Play);
+
+* {
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	padding: 0;
+	outline: 0;
+}
+
+		 
+
+body {
+  font-family: 'Wire One', Helvetica, Arial, sans-serif;
+  background: url(../images/BG.jpg) repeat;   
+}
+
+.caixa {
+	background: #f0f0f0;
+	width: 425px;
+	height: 610px;
+	margin: 2px auto 0;
+	padding: 0;
+	border-radius: 5px;
+	border: 2px dashed #9BCC21;
+	box-shadow: 0 0 0px 10px #f0f0f0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+}
+
+.titulo {
+  letter-spacing: 0px;  
+  font-size: 72px;
+  font-weight: 400;
+  text-align: center;
+  margin: 12px 0;  
+}
+
+.nome, .email, .usuario, .senha, .nivel, .form-control, h3 {
+	font-family: 'Play', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #222;
+	margin: 0;
+	padding: 0;
+	display: block;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 306px;
+	height: 40px;
+	margin: 0 auto;
+	outline: 0;
+	padding: 4px 9px;
+	transition: all .2s ease;
+}
+
+.username:focus, .senha:focus {
+  box-shadow: inset 0 0 9px rgba(155, 204, 33,0.7);
+}
+.senha {
+  margin-bottom: 20px;
+}
+
+.buttonS {
+  font-family: 'Play', Helvetica, Arial, sans-serif;
+  color: #aaa;
+  border: 1px solid #aaa;
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 45px;
+  font-size: 24px;
+  transition: all .2s ease;
+  border-radius: 5px;
+}
+
+.buttonS:hover {
+  color: #222;
+  background: #9BCC21;
+}
+
+.buttonS:active {
+  
+}
+		 .g-recaptcha{
+			 	width: 306px;
+	height: 40px;
+	margin: 0 auto;
+	outline: 0;
+		 }
+
+a{ 
+	color: #f2335f;
+	text-decoration: none;
+	
+	 }
+	 
+.click{
+	text-align: center;
+	font-size: 24px;
+	}
+
+form{
+	margin-top: 2px;
+	
+	}
+	
+
+			footer {
+			 font: 15px Montserrat, sans-serif;
+      line-height: 1.8;
+      text-align: center;
+
+		}
+
+		.texto{
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+  .bg-4 { 
+      background-color: #6d6767; 
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 10px;
+      padding-bottom: 15px;
+  }
